@@ -1,10 +1,18 @@
+import { useEffect } from 'react'
 import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { RiAccountPinCircleLine } from 'react-icons/ri'
 import { RxCalendar } from 'react-icons/rx'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Search = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
+
   return (
     <div className='search container section'>
-      <div className='sectionContainer grid'>
+      <div data-aos='fade-up' data-aos-duration='2500' className='sectionContainer grid'>
 
         <div className='btns flex'>
 
@@ -24,7 +32,7 @@ const Search = () => {
 
         <div className='searchInputs flex'>
 
-          <div className='singleInput flex'>
+          <div data-aos='fade-up' data-aos-duration='2000' className='singleInput flex'>
             <div className='iconDiv'>
               <HiOutlineLocationMarker className='icon' />
             </div>
@@ -34,7 +42,7 @@ const Search = () => {
             </div>
           </div>
 
-          <div className='singleInput flex'>
+          <div className='singleInput flex' data-aos='fade-up' data-aos-duration='2000'>
             <div className='iconDiv'>
               <RiAccountPinCircleLine className='icon' />
             </div>
@@ -44,7 +52,7 @@ const Search = () => {
             </div>
           </div>
 
-          <div className='singleInput flex'>
+          <div className='singleInput flex' data-aos='fade-up' data-aos-duration='2000'>
             <div className='iconDiv'>
               <RxCalendar className='icon' />
             </div>
@@ -54,7 +62,7 @@ const Search = () => {
             </div>
           </div>
 
-          <div className='singleInput flex'>
+          <div className='singleInput flex' data-aos='fade-up' data-aos-duration='2000'>
             <div className='iconDiv'>
               <RxCalendar className='icon' />
             </div>
@@ -64,7 +72,7 @@ const Search = () => {
             </div>
           </div>
 
-          <button className='btn btnBlock flex'>Search</button>
+          <button className='btn btnBlock flex' data-aos='fade-up' data-aos-duration='2000'>Search</button>
         </div>
       </div>
     </div>
