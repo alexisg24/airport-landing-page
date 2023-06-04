@@ -5,6 +5,6 @@ export const systemInfo = [
   },
   {
     title: 'Sistema de Vuelos',
-    desc: 'Sistema de seguimiento de vuelos del aeropúerto en tiempo real, con módulos de administrador y para el público.'
+    desc: 'Sistema de seguimiento de vuelos del aeropuerto en tiempo real, con módulos de administrador y para el público.'
   }
 ]

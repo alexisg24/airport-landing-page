@@ -14,7 +14,7 @@ const Support = () => {
 
         <div className='titlesDiv'>
           <small>Soluciones tecnológicas</small>
-          <h2>Todas Tus Aplicaciones En Un Solo Lugar</h2>
+          <h2>Todas tus aplicaciones en un solo lugar</h2>
           <p>Englobamos todos nuestros servicios y sistemas de manera sencilla para el usuario!</p>
         </div>
 

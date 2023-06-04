@@ -74,7 +74,7 @@ const Footer = () => {
       </div>
 
       <div className='copyRightDiv flex'>
-        <p>Diseño cortesía | Desarrollado por Alexis García</p><a href='https://github.com/alexisg24' target='_blank' rel='noreferrer'><AiFillGithub className='icon' /></a>
+        <p>Diseño de Cortesía y Desarrollado por Alexis García</p><a href='https://github.com/alexisg24' target='_blank' rel='noreferrer'><AiFillGithub className='icon' /></a>
       </div>
     </div>
   )

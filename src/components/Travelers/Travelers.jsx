@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import back from '../../assets/back.jpg'
-import users from '../../assets/users.jpg'
+import logo from '../../assets/logo.png'
+import maintenance from '../../assets/mantenimientos.png'
+import flight from '../../assets/vuelos.png'
 import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 const Travelers = () => {
   useEffect(() => {
@@ -15,26 +16,26 @@ const Travelers = () => {
 
         <div className='travelersContainer grid'>
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={back} className='destinationImage' />
+            <img src={maintenance} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={users} className='travelerImage' />
+                <img src={logo} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>Mantenimientos</span>
+                <span><a href='/maintenances'>Mantenimientos</a></span>
                 IAJC
               </div>
             </div>
           </div>
 
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={back} className='destinationImage' />
+            <img src={flight} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={users} className='travelerImage' />
+                <img src={logo} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>Vuelos</span>
+                <span><a href='/flights'>Vuelos</a></span>
                 IAAEF
               </div>
             </div>
@@ -44,7 +45,7 @@ const Travelers = () => {
             <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={users} className='travelerImage' />
+                <img src={logo} className='travelerImage' />
               </div>
               <div className='travelerName'>
                 <span>Próximamente</span>
@@ -57,7 +58,7 @@ const Travelers = () => {
             <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={users} className='travelerImage' />
+                <img src={logo} className='travelerImage' />
               </div>
               <div className='travelerName'>
                 <span>Próximamente</span>
