@@ -32,6 +32,11 @@ a {
   text-decoration: none;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 li {
   list-style: none;
   cursor: pointer;
@@ -557,6 +562,13 @@ h2 {
   gap: 1rem;
   justify-content: center;
   margin: auto;
+  align-items: center;
+}
+.footer .sectionContainer .gridOne .logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 .footer .sectionContainer .gridOne .logoDiv .Logo {
   width: 20%;
@@ -602,11 +614,15 @@ h2 {
 }
 .footer .copyRightDiv {
   justify-content: center;
+  align-items: center;
   margin-top: 1.5rem;
   padding: 1rem;
   gap: 1rem;
   border-top: 1px solid var(--greyText);
   text-align: center;
+}
+.footer .copyRightDiv .icon {
+  align-self: center;
 }
 
 @media screen and (min-width: 480px) {

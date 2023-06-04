@@ -3,7 +3,6 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 import { RiAccountPinCircleLine } from 'react-icons/ri'
 import { RxCalendar } from 'react-icons/rx'
 import Aos from 'aos'
-import 'aos/dist/aos.css'
 
 const Search = () => {
   useEffect(() => {

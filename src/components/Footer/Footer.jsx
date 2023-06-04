@@ -1,75 +1,56 @@
 import { useEffect } from 'react'
-import logo from '../../assets/logo.png'
-import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai'
-import { TiSocialFacebook } from 'react-icons/ti'
-import { FaPinterestP } from 'react-icons/fa'
+import logoGob from '../../assets/gob-logo.png'
+import logoFalcon from '../../assets/logoFalcon.png'
+import logoAIJC from '../../assets/logoAIJC.png'
+import { AiOutlineTwitter, AiFillInstagram, AiFillGithub } from 'react-icons/ai'
+import { TbWorldWww } from 'react-icons/tb'
 import Aos from 'aos'
-import 'aos/dist/aos.css'
 const Footer = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 })
   }, [])
   return (
-    <div className='footer'>
+    <div className='footer' id='footer'>
       <div className='sectionContainer container grid'>
         <div className='gridOne' data-aos='fade-up' data-aos-duration='2500'>
           <div className='logoDiv'>
-            <img src={logo} className='Logo' />
+            <img src={logoGob} />
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className='logoDiv'>
+            <img src={logoFalcon} className='Logo' />
+            <img src={logoAIJC} className='Logo' />
+          </div>
+          <p>Instituto Autónomo de Aeropuertos del Estado Falcón.</p>
           <div className='socialIcon flex'>
-            <TiSocialFacebook className='icon' />
-            <AiOutlineTwitter className='icon' />
-            <AiFillYoutube className='icon' />
-            <FaPinterestP className='icon' />
+            <a href='https://www.instagram.com/aeropuertosdefalcon' target='_blank' rel='noreferrer'><AiFillInstagram className='icon' /></a>
+            <a href='https://twitter.com/iaefalcon' target='_blank' rel='noreferrer'><AiOutlineTwitter className='icon' /></a>
+            <a href='https://aeropuertosdefalcon.com' target='_blank' rel='noreferrer'><TbWorldWww className='icon' /></a>
           </div>
         </div>
 
         <div className='footerLinks' data-aos='fade-up' data-aos-duration='2500'>
-          <span className='linkTitle'>Information</span>
+          <span className='linkTitle'>Información</span>
           <li>
-            <a href=''>Home</a>
+            <a href='https://aeropuertosdefalcon.com' target='_blank' rel='noreferrer'>Inicio</a>
           </li>
           <li>
-            <a href=''>Explore</a>
+            <a href='https://aeropuertosdefalcon.com/institucion/' target='_blank' rel='noreferrer'>Institución</a>
           </li>
           <li>
-            <a href=''>Flight Status</a>
+            <a href='https://aeropuertosdefalcon.com/aerolineas/' target='_blank' rel='noreferrer'>Aerolíneas</a>
           </li>
           <li>
-            <a href=''>Travel</a>
+            <a href='https://aeropuertosdefalcon.com/itinerarios/' target='_blank' rel='noreferrer'>Itinerarios</a>
           </li>
           <li>
-            <a href=''>Check-In</a>
+            <a href='https://aeropuertosdefalcon.com/turismo/' target='_blank' rel='noreferrer'>Turismo</a>
           </li>
           <li>
-            <a href=''>Manage your booking</a>
-          </li>
-        </div>
-
-        <div className='footerLinks' data-aos='fade-up' data-aos-duration='2500'>
-          <span className='linkTitle'>Quick Guide</span>
-          <li>
-            <a href=''>FAQ</a>
-          </li>
-          <li>
-            <a href=''>How to</a>
-          </li>
-          <li>
-            <a href=''>Features</a>
-          </li>
-          <li>
-            <a href=''>Baggage</a>
-          </li>
-          <li>
-            <a href=''>Route Map</a>
-          </li>
-          <li>
-            <a href=''>Our Communities</a>
+            <a href='https://aeropuertosdefalcon.com/galeria/' target='_blank' rel='noreferrer'>Galería</a>
           </li>
         </div>
 
-        <div className='footerLinks' data-aos='fade-up' data-aos-duration='2500'>
+        {/* <div className='footerLinks' data-aos='fade-up' data-aos-duration='2500'>
           <span className='linkTitle'>Information</span>
           <li>
             <a href=''>Chauffer</a>
@@ -89,11 +70,11 @@ const Footer = () => {
           <li>
             <a href=''>Programming Rules</a>
           </li>
-        </div>
+        </div> */}
       </div>
 
       <div className='copyRightDiv flex'>
-        <p>Courtesy Design | Developed by <a href='#'>Author</a></p>
+        <p>Diseño cortesía | Desarrollado por Alexis García</p><a href='https://github.com/alexisg24' target='_blank' rel='noreferrer'><AiFillGithub className='icon' /></a>
       </div>
     </div>
   )

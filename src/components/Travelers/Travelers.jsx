@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import dubai from '../../assets/dubai.jpg'
-import user from '../../assets/user.jpg'
+import back from '../../assets/back.jpg'
+import users from '../../assets/users.jpg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -11,57 +11,57 @@ const Travelers = () => {
   return (
     <div className='travelers container section'>
       <div className='sectionContainer'>
-        <h2 data-aos='fade-down' data-aos-duration='2500'>Top travelers of this month</h2>
+        <h2 data-aos='fade-down' data-aos-duration='2500'>Sistemas disponibles</h2>
 
         <div className='travelersContainer grid'>
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={dubai} className='destinationImage' />
+            <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={user} className='travelerImage' />
+                <img src={users} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>IsraTech</span>
-                @username
+                <span>Mantenimientos</span>
+                IAJC
               </div>
             </div>
           </div>
 
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={dubai} className='destinationImage' />
+            <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={user} className='travelerImage' />
+                <img src={users} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>IsraTech</span>
-                @username
+                <span>Vuelos</span>
+                IAAEF
               </div>
             </div>
           </div>
 
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={dubai} className='destinationImage' />
+            <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={user} className='travelerImage' />
+                <img src={users} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>IsraTech</span>
-                @username
+                <span>Próximamente</span>
+                IAAEF
               </div>
             </div>
           </div>
 
           <div className='singleTraveler' data-aos='fade-up' data-aos-duration='2500'>
-            <img src={dubai} className='destinationImage' />
+            <img src={back} className='destinationImage' />
             <div className='travelerDetails'>
               <div className='travelerPicture'>
-                <img src={user} className='travelerImage' />
+                <img src={users} className='travelerImage' />
               </div>
               <div className='travelerName'>
-                <span>IsraTech</span>
-                @username
+                <span>Próximamente</span>
+                IAAEF
               </div>
             </div>
           </div>
